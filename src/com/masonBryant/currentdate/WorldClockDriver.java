@@ -17,5 +17,11 @@ public class WorldClockDriver {
         System.out.println("\nnowLocalDate.getDayOfWeek() = " + worldClock.getDayOfWeekForNow());
         System.out.println("nowLocalDate.getDayOfMonth() = " + worldClock.getDayOfMonthForNow());
         System.out.println("nowLocalDate.getDayOfYear() = " + worldClock.getDayOfYearForNow());
+
+        System.out.println("\nnowZonedDateTimeForNewYork = " + dateTime.format(worldClock.getNowDateTimeForNewYork()));
+        System.out.println("nowZonedDateTimeForNewYork.getZone() = " + worldClock.getNowDateTimeForNewYork().getZone());
+
+        System.out.println("\nnowZonedDateTimeForLA = " + dateTime.format(worldClock.getNowDateTimeForLA()));
+        System.out.println("nowZonedDateTimeForLA.getZone() = " + worldClock.getNowDateTimeForLA().getZone());
     }
 }
