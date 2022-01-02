@@ -13,5 +13,9 @@ public class WorldClockDriver {
 
         System.out.println("nowLocalDate = " + date.format(worldClock.getNowForDate()));
         System.out.println("nowLocalDateTime = " + dateTime.format(worldClock.getNowForDateAndTime()));
+
+        System.out.println("\nnowLocalDate.getDayOfWeek() = " + worldClock.getDayOfWeekForNow());
+        System.out.println("nowLocalDate.getDayOfMonth() = " + worldClock.getDayOfMonthForNow());
+        System.out.println("nowLocalDate.getDayOfYear() = " + worldClock.getDayOfYearForNow());
     }
 }
