@@ -23,5 +23,11 @@ public class WorldClockDriver {
 
         System.out.println("\nnowZonedDateTimeForLA = " + dateTime.format(worldClock.getNowDateTimeForLA()));
         System.out.println("nowZonedDateTimeForLA.getZone() = " + worldClock.getNowDateTimeForLA().getZone());
+
+        System.out.println("\nnowZonedDateTimeForLondon = " + dateTime.format(worldClock.getNowDateTimeForLondon()));
+        System.out.println("nowZonedDateTimeForLondon.getZone() = " + worldClock.getNowDateTimeForLondon().getZone());
+
+        System.out.println("\nnowZonedDateTimeForMoscow = " + dateTime.format(worldClock.getNowDateTimeForMoscow()));
+        System.out.println("nowZonedDateTimeForMoscow.getZone() = " + worldClock.getNowDateTimeForMoscow().getZone());
     }
 }

@@ -5,28 +5,23 @@ import java.time.*;
 public class WorldClock {
 
     public LocalDate getNowForDate() {
-        LocalDate localDate = LocalDate.now();
-        return localDate;
+        return LocalDate.now();
     }
 
     public LocalDateTime getNowForDateAndTime() {
-        LocalDateTime localDateTime = LocalDateTime.now();
-        return localDateTime;
+        return LocalDateTime.now();
     }
 
     public DayOfWeek getDayOfWeekForNow() {
-        LocalDateTime localDateTime = LocalDateTime.now();
-        return localDateTime.getDayOfWeek();
+        return LocalDateTime.now().getDayOfWeek();
     }
 
     public int getDayOfMonthForNow() {
-        LocalDateTime localDateTime = LocalDateTime.now();
-        return localDateTime.getMonthValue();
+        return LocalDateTime.now().getMonthValue();
     }
 
     public int getDayOfYearForNow() {
-        LocalDateTime localDateTime = LocalDateTime.now();
-        return localDateTime.getDayOfYear();
+        return LocalDateTime.now().getDayOfYear();
     }
 
     public ZonedDateTime getNowDateTimeForNewYork() {
@@ -36,7 +31,7 @@ public class WorldClock {
     public ZonedDateTime getNowDateTimeForLA() {
         return getNowDatetimeWithZoneId("America/Los_Angeles");}
 
-    public ZonedDateTime getNowDateTimeForLondond() {
+    public ZonedDateTime getNowDateTimeForLondon() {
         return getNowDatetimeWithZoneId("Europe/London");
     }
 
@@ -49,8 +44,6 @@ public class WorldClock {
     }
 
     private ZonedDateTime getNowDatetimeWithZoneId(String zoneId) {
-        ZonedDateTime now = ZonedDateTime.now();
-        ZonedDateTime zonedDateTime = now.withZoneSameInstant(ZoneId.of(zoneId));
-        return zonedDateTime;
+        return ZonedDateTime.now().withZoneSameInstant(ZoneId.of(zoneId));
     }
 }
