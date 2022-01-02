@@ -29,5 +29,8 @@ public class WorldClockDriver {
 
         System.out.println("\nnowZonedDateTimeForMoscow = " + dateTime.format(worldClock.getNowDateTimeForMoscow()));
         System.out.println("nowZonedDateTimeForMoscow.getZone() = " + worldClock.getNowDateTimeForMoscow().getZone());
+
+        System.out.println("\nnowZonedDateTimeForTokyo = " + dateTime.format(worldClock.getNowDateTimeForTokyo()));
+        System.out.println("nowZonedDateTimeForTokyo.getZone() = " + worldClock.getNowDateTimeForTokyo().getZone());
     }
 }
